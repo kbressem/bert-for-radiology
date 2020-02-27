@@ -20,7 +20,7 @@ For generation of a custom vocabulary and for generation of training-data for BE
 As all text files were stored as csv, they need to be converted to document format. Each row did contain a document, therefore pasting the empty line between documents was straightforward, however having only one sentence per line requires the documents to be split by sentence, which is more complicated.  
 In order to sentencize the reports the German nlp-module of `spaCy` was used. As this did not work perfectly and also split most of the radiology-specific abbreviations an other function to fix those wrong splits was written. 
 
-A [notebook](pretraining/sentencizing.ipynb) on the process and a [python-script](pretraining/run_sentencizing.py) to run the code from the bash can be foun in the folder pregeneration.
+A [notebook](pretraining/sentencizing.ipynb) on the process and a [python-script](pretraining/run_sentencizing.py) to run the code from the bash can be found in the folder pregeneration.
 
 ### Create WordPiece vocabulary
 Google research does not provide scripts to create a new WordPiece vocabulary. They do refer to other open source options such as:
