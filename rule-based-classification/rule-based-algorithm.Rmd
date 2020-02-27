@@ -1,0 +1,205 @@
+---
+title: "Constructing a Rule Based Algorithm to Classify Radiology Text Reports"
+author: Keno Bressem
+output: github_document
+---
+In order to ensure the most accurate possible comparability of the rule-based algorithm developed here, the entire algorithm is developed only on the annotated data sets.  
+
+### preliminary considerations
+Theoretically, it should be possible to create a very accurate (even more accurate then BERT based algorithms) rule-based algorithm for the classification of text-reports. However, this poses some difficulties. An exact knowledge of the text structure as well as the findings structure is necessary to recognize pitfalls. 
+
+#### Unclear statements
+Radiologists do not always express themselves clearly, but often use blurred formulations which cannot always be assigned to a clear statement.
+
+**Example**:
+
+> "Maskierte Infiltrate in den basalen, minderbelüfteten Arealen möglich"
+
+Which roughly translates to: 
+
+> "Masked infiltrates possible in basal, poorly ventilated areas."
+
+This wording, which is often found in reoports of ICU chest X-rays, expresses either the radiologists uncertainty that he or she suspects infiltrates as cause for the patients elevated infection levels, but cannot clearly delimit them because the lungs are not sufficiently ventilated for this OR, and this is what clinical practice unfortunately often shows us, she/he just does mot want to make a specific descission and maybe falsly rule out pneumonia, even though the X-ray  does not actually show any clear indications for the presence of pneumonia. 
+Clinical practice shows that the above formulation rather means that no infiltrates can be distinguished in the image.  
+
+#### Insufficient and therefore unevaluable reports
+Findings are considered to be unevaluable if they do not contain sufficient information. E.g. if no explicit statement is made about the location of the foreign materials, but these are only described as "no change of foreign materials" (German: "Fremdmaterial idem"). However, the word "idem" should not always mark a report as unevaluable, as it can also be used if no change occured. 
+This is particualry tricky and no simple rule can be established, as even perfectly sufficient report text might contain those expressions. 
+
+**Examples**: 
+
+> Kein Pneumothorax nach Drainagenanlage. Darüber hinaus kein Befundwandel
+
+> No pneumothorax after inserting a thoracic drain. No further change.
+
+not evaluable. 
+
+> Herz nicht verbreitert. Keine Stauung. Kein Erguss. Kein Infiltrat. Fremdmaterial idem. 
+
+> Heart not enlarged. No congestion. No effusion. No infiltrate. Foreign material idem. 
+
+not evaluable. No statement regarding pneumothorax, still it can be assumed that there is none, since such an important but rare finding is probably always reported if present but often not reported if not present. However, one cannot draw a conclusion on the therapy aids such as catheters, drains etc.
+
+> Herz nicht verbreitert. Keine Stauung. Kein Erguss. Kein Infiltrat. Fremdmaterial idem (ZVK, TK). 
+
+> Heart not enlarged. No congestion. No effusion. No infiltrate. Foreign material idem (zentral venous catheter, tracheal cannula). 
+
+Evaluable. The foreign materials are named explicitly, but this occures not so often. 
+
+> Herz nicht verbreitert. Keine Stauung. Kein Erguss. Kein Infiltrat. Neuer ZVK von rechts, kein Pneumothorax. Sonst Fremdmaterial idem. 
+
+> Heart not enlarged. No congestion. No effusion. No infiltrate. Foreign material idem (zentral venous catheter, tracheal cannula). 
+
+not evaluable, as there is no information about the other unchanged foreign bodies.  
+
+#### Unlikely differential diagnoses
+If a differntial diagnosis is mentioned, it is difficult to exclude this string: 
+
+**Example**:
+
+> Rechts zentral betonte flächige Verschattung, vereinbar mit pneumonischer Infiltration DD bei vermehrter Gefäßzeichnung stauungsbedingt 
+
+> Right central shading, compatible with pneumatic infiltration DD with increased vascular drawing due to congestion 
+
+This is probably no congestion (congestion should be symmetrical) and should thus be annotated so. 
+
+
+```{r}
+library(tidyverse)
+library(magrittr)
+```
+
+### Loading the text-files stored as single R file:
+```{r}
+textreports <- read_csv("/media/bressekk/0B36170D0B36170D/Textdaten_csv/all_data.csv")
+```
+
+
+### Removal of unevaluable reports
+Since the annotations already contained whether a finding was useful or not, this was done in advance. In the Final Model, however, this will be built in. 
+
+Removal by fixed strings:
+```{r}
+unevaluable = "Fremdmaterial idem|kurzfristigen Verlauf kein Befundwandel"
+textreports %<>% filter(!str_detect(text, unevaluable))
+```
+
+### Set up dataframe for annotations
+```{r}
+set.seed(081219)
+train <- sample(1:nrow(textreports), round(0.8*nrow(textreports)), F)
+
+
+annotations <- tibble(stauung = rep(NA, nrow(textreports)),
+                      erguss = NA,
+                      verschattung = NA,
+                      pneumothorax = NA, 
+                      zvk = NA, 
+                      thoraxdrainage = NA, 
+                      magensonde = NA, 
+                      tubus = NA, 
+                      fehllage = NA)
+```
+
+### Congestion (German: Stauung)
+
+If the finding should not be mentioned, it is assumed the finding is not present (reasonable as unevaluable reports have previously been excluded)
+
+```{r}
+congestion_names <- "stauung|dekompensat|volumen|flüssigkeitseinlag|gestaut|ödem"
+
+annotations$stauung <-  ifelse(
+                          str_detect(
+                            str_to_lower(textreports$text), 
+                            congestion_names), 
+                          annotations$stauung, 
+                          0) 
+```
+
+The findings are all printed out in the terminal, the text is then manually evaluated and the strings are then copied to the vectors for `negations` or `positive_finding`.
+```{r message=FALSE, warning=FALSE}
+negations <- read_csv("negative_congestion.csv", col_names = F) %>% 
+  select("X1") %>% 
+    unlist() %>% 
+      str_to_lower()
+
+positive_finding <- read_csv("positive_congestion.csv", col_names = F) %>% 
+  select("X1") %>% 
+    unlist() %>% 
+      str_to_lower()
+```
+
+Positve findings should be evaluated first. "Pulmonale Stauung" and "Keine pulmonale Stauung" will be rated as positive, but the second then be again labeled as negative in the next loop. 
+```{r message=FALSE, warning=FALSE}
+for (str in positive_finding) {
+  annotations[train,]$stauung <- ifelse(
+                                    str_detect(
+                                      str_to_lower(textreports[train,]$text), 
+                                      str), 
+                                    1, 
+                                    annotations[train,]$stauung) 
+}
+
+for (str in negations) {
+  annotations[train,]$stauung <- ifelse(
+                                    str_detect(
+                                      str_to_lower(textreports[train,]$text), 
+                                      str), 
+                                    0, 
+                                    annotations[train,]$stauung) 
+}
+```
+
+Evaluate accuracy of rule based algorithm on training data
+```{r}
+mean(annotations[train,]$stauung == textreports[train, ]$Stauung, na.rm = T)
+```
+missed annotations on training data
+```{r}
+mean(is.na(annotations[train,]$stauung))
+```
+accuray with missed set to 0/FALSE
+```{r}
+annotations[train,]$stauung <- ifelse(is.na(annotations[train,]$stauung), 
+                                      0, 
+                                      annotations[train,]$stauung)
+
+mean(annotations[train,]$stauung == textreports[train, ]$Stauung, na.rm = T)
+```
+
+Evaluate accuracy of rule based algorithm on test data
+```{r}
+for (str in positive_finding) {
+  annotations[-train,]$stauung <- ifelse(
+                                    str_detect(
+                                    str_to_lower(
+                                      textreports[-train,]$text), str), 
+                                    1, 
+                                    annotations[-train,]$stauung) }
+
+for (str in negations) {
+  annotations[-train,]$stauung <- ifelse(
+                                    str_detect(
+                                      str_to_lower(
+                                        textreports[-train,]$text), str), 
+                                    0, 
+                                    annotations[-train,]$stauung) }
+
+mean(annotations[-train,]$stauung == textreports[-train, ]$Stauung, na.rm = T)
+```
+
+missed annotations on test data
+```{r}
+mean(is.na(annotations[-train,]$stauung))
+```
+
+accuray with missed set to 0/FALSE
+```{r}
+annotations[-train,]$stauung <- ifelse(is.na(annotations[-train,]$stauung), 
+                                       1, 
+                                       annotations[-train,]$stauung)
+
+mean(annotations[-train,]$stauung == textreports[-train, ]$Stauung, na.rm = T)
+```
+
+

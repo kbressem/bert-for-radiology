@@ -1,0 +1,37 @@
+train_size,Model,Finding,AUPRC,AUC
+4703,radbert,Congestion,0.77,0.9
+4703,radbert,Opacity,0.96,0.81
+4703,radbert,Effusion,0.93,0.9
+4703,radbert,Pneumothorax,0.75,0.93
+4703,radbert,Thoracic drain,0.88,0.93
+4703,radbert,Venous Catheter,0.86,0.89
+4703,radbert,Gastric Tube,0.71,0.84
+4703,radbert,Tracheal Tube/Canula,0.9,0.91
+4703,radbert,Misplaced Medical Device,0.4,0.77
+4703,fsbert,Congestion,0.47,0.81
+4703,fsbert,Opacity,0.74,0.6
+4703,fsbert,Effusion,0.75,0.76
+4703,fsbert,Pneumothorax,0.51,0.84
+4703,fsbert,Thoracic drain,0.65,0.91
+4703,fsbert,Venous Catheter,0.84,0.89
+4703,fsbert,Gastric Tube,0.75,0.82
+4703,fsbert,Tracheal Tube/Canula,0.87,0.9
+4703,fsbert,Misplaced Medical Device,0,0.46
+4703,gerbert,Congestion,0.56,0.76
+4703,gerbert,Opacity,0.93,0.74
+4703,gerbert,Effusion,0.96,0.94
+4703,gerbert,Pneumothorax,0.69,0.78
+4703,gerbert,Thoracic drain,0.76,0.91
+4703,gerbert,Venous Catheter,0.77,0.87
+4703,gerbert,Gastric Tube,0.6,0.74
+4703,gerbert,Tracheal Tube/Canula,0.8,0.87
+4703,gerbert,Misplaced Medical Device,0.62,0.97
+4703,multibert,Congestion,0.65,0.87
+4703,multibert,Opacity,0.93,0.75
+4703,multibert,Effusion,0.97,0.95
+4703,multibert,Pneumothorax,0.76,0.9
+4703,multibert,Thoracic drain,0.79,0.89
+4703,multibert,Venous Catheter,0.74,0.86
+4703,multibert,Gastric Tube,0.61,0.76
+4703,multibert,Tracheal Tube/Canula,0.82,0.89
+4703,multibert,Misplaced Medical Device,0.5,0.96

@@ -1,0 +1,11 @@
+finding,prevalence,finding,prevalence,finding,prevalence
+all data,,training data,,test data,
+Verschattung,60% (n = 3101),Verschattung,60% (n = 2836),Verschattung,53% (n = 265)
+Erguss,47% (n = 2461),Erguss,48% (n = 2243),Erguss,44% (n = 218)
+Stauung,28% (n = 1446),Stauung,28% (n = 1330),Stauung,23% (n = 116)
+Pneumothorax,8% (n = 429),Pneumothorax,8% (n = 390),Pneumothorax,8% (n = 39)
+ZVK,58% (n = 3020),ZVK,58% (n = 2732),ZVK,58% (n = 288)
+Tubus,41% (n = 2110),Tubus,40% (n = 1902),Tubus,42% (n = 208)
+Magensonde,25% (n = 1299),Magensonde,25% (n = 1169),Magensonde,26% (n = 130)
+Thoraxdrainage,21% (n = 1077),Thoraxdrainage,21% (n = 969),Thoraxdrainage,22% (n = 108)
+Materialfehllage,4% (n = 188),Materialfehllage,3% (n = 164),Materialfehllage,5% (n = 24)

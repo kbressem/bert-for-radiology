@@ -1,0 +1,12 @@
+X2,fsBERT,X4,gerBERT,X6,mBERT,X8,radBERT,X10
+finding,AUC,AUPRC,AUC,AUPRC,AUC,AUPRC,AUC,AUPRC
+Congestion,0.81,0.47,0.76,0.56,0.87,0.65,0.9,0.77
+Opacity,0.6,0.74,0.74,0.93,0.75,0.93,0.81,0.96
+Effusion,0.76,0.75,0.94,0.96,0.95,0.97,0.9,0.93
+Pneumothorax,0.84,0.51,0.78,0.69,0.9,0.76,0.93,0.75
+Thoracic drain,0.91,0.65,0.91,0.76,0.89,0.79,0.93,0.88
+Venous Catheter,0.89,0.84,0.87,0.77,0.86,0.74,0.89,0.86
+Gastric Tube,0.82,0.75,0.74,0.6,0.76,0.61,0.84,0.71
+Tracheal Tube/Canula,0.9,0.87,0.87,0.8,0.89,0.82,0.91,0.9
+Misplaced Medical Device,0.46,0,0.97,0.62,0.96,0.5,0.77,0.4
+Pooled,0.78,0.62,0.84,0.74,0.87,0.75,0.88,0.8

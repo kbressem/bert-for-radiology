@@ -1,0 +1,325 @@
+train_size,Model,Finding,AUPRC,AUC
+200,pt-radiobert-base-german-cased,Congestion,0.47,0.86
+200,pt-radiobert-base-german-cased,Opacity,0.7,0.81
+200,pt-radiobert-base-german-cased,Effusion,0.78,0.88
+200,pt-radiobert-base-german-cased,Pneumothorax,0.4,0.95
+200,pt-radiobert-base-german-cased,Thoracic drain,0.73,0.93
+200,pt-radiobert-base-german-cased,Venous Catheter,0.96,0.96
+200,pt-radiobert-base-german-cased,Gastric Tube,0.93,0.98
+200,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.91,0.96
+200,pt-radiobert-base-german-cased,Misplaced Medical Device,0.04,0.95
+200,bert-base-german-cased,Congestion,0.48,0.86
+200,bert-base-german-cased,Opacity,0.69,0.79
+200,bert-base-german-cased,Effusion,0.82,0.9
+200,bert-base-german-cased,Pneumothorax,0.27,0.94
+200,bert-base-german-cased,Thoracic drain,0.88,0.97
+200,bert-base-german-cased,Venous Catheter,0.97,0.97
+200,bert-base-german-cased,Gastric Tube,0.95,0.98
+200,bert-base-german-cased,Tracheal Tube/Canula,0.8,0.9
+200,bert-base-german-cased,Misplaced Medical Device,0.04,0.95
+200,pt-radiobert-from-scratch,Congestion,0.41,0.85
+200,pt-radiobert-from-scratch,Opacity,0.67,0.78
+200,pt-radiobert-from-scratch,Effusion,0.75,0.86
+200,pt-radiobert-from-scratch,Pneumothorax,0.37,0.95
+200,pt-radiobert-from-scratch,Thoracic drain,0.42,0.87
+200,pt-radiobert-from-scratch,Venous Catheter,0.92,0.93
+200,pt-radiobert-from-scratch,Gastric Tube,0.92,0.97
+200,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.78,0.88
+200,pt-radiobert-from-scratch,Misplaced Medical Device,0,0.95
+200,bert-base-multilingual-cased,Congestion,0.26,0.82
+200,bert-base-multilingual-cased,Opacity,0.65,0.78
+200,bert-base-multilingual-cased,Effusion,0.77,0.86
+200,bert-base-multilingual-cased,Pneumothorax,0.21,0.94
+200,bert-base-multilingual-cased,Thoracic drain,0.48,0.88
+200,bert-base-multilingual-cased,Venous Catheter,0.95,0.96
+200,bert-base-multilingual-cased,Gastric Tube,0.89,0.97
+200,bert-base-multilingual-cased,Tracheal Tube/Canula,0.64,0.83
+200,bert-base-multilingual-cased,Misplaced Medical Device,0.01,0.95
+400,pt-radiobert-base-german-cased,Congestion,0.74,0.93
+400,pt-radiobert-base-german-cased,Opacity,0.76,0.84
+400,pt-radiobert-base-german-cased,Effusion,0.88,0.93
+400,pt-radiobert-base-german-cased,Pneumothorax,0.63,0.97
+400,pt-radiobert-base-german-cased,Thoracic drain,0.91,0.98
+400,pt-radiobert-base-german-cased,Venous Catheter,0.96,0.97
+400,pt-radiobert-base-german-cased,Gastric Tube,0.95,0.99
+400,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.96,0.98
+400,pt-radiobert-base-german-cased,Misplaced Medical Device,0.16,0.96
+400,bert-base-german-cased,Congestion,0.78,0.94
+400,bert-base-german-cased,Opacity,0.77,0.85
+400,bert-base-german-cased,Effusion,0.92,0.95
+400,bert-base-german-cased,Pneumothorax,0.39,0.95
+400,bert-base-german-cased,Thoracic drain,0.88,0.97
+400,bert-base-german-cased,Venous Catheter,0.96,0.97
+400,bert-base-german-cased,Gastric Tube,0.95,0.99
+400,bert-base-german-cased,Tracheal Tube/Canula,0.95,0.97
+400,bert-base-german-cased,Misplaced Medical Device,0.06,0.95
+400,pt-radiobert-from-scratch,Congestion,0.51,0.87
+400,pt-radiobert-from-scratch,Opacity,0.77,0.83
+400,pt-radiobert-from-scratch,Effusion,0.78,0.88
+400,pt-radiobert-from-scratch,Pneumothorax,0.41,0.95
+400,pt-radiobert-from-scratch,Thoracic drain,0.69,0.92
+400,pt-radiobert-from-scratch,Venous Catheter,0.97,0.97
+400,pt-radiobert-from-scratch,Gastric Tube,0.95,0.98
+400,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.93,0.96
+400,pt-radiobert-from-scratch,Misplaced Medical Device,0.01,0.95
+400,bert-base-multilingual-cased,Congestion,0.51,0.87
+400,bert-base-multilingual-cased,Opacity,0.71,0.81
+400,bert-base-multilingual-cased,Effusion,0.76,0.88
+400,bert-base-multilingual-cased,Pneumothorax,0.4,0.95
+400,bert-base-multilingual-cased,Thoracic drain,0.79,0.94
+400,bert-base-multilingual-cased,Venous Catheter,0.97,0.98
+400,bert-base-multilingual-cased,Gastric Tube,0.95,0.98
+400,bert-base-multilingual-cased,Tracheal Tube/Canula,0.94,0.96
+400,bert-base-multilingual-cased,Misplaced Medical Device,0.13,0.96
+600,pt-radiobert-base-german-cased,Congestion,0.83,0.95
+600,pt-radiobert-base-german-cased,Opacity,0.87,0.91
+600,pt-radiobert-base-german-cased,Effusion,0.91,0.95
+600,pt-radiobert-base-german-cased,Pneumothorax,0.57,0.96
+600,pt-radiobert-base-german-cased,Thoracic drain,0.92,0.98
+600,pt-radiobert-base-german-cased,Venous Catheter,0.97,0.98
+600,pt-radiobert-base-german-cased,Gastric Tube,0.97,0.99
+600,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+600,pt-radiobert-base-german-cased,Misplaced Medical Device,0.32,0.97
+600,bert-base-german-cased,Congestion,0.74,0.93
+600,bert-base-german-cased,Opacity,0.86,0.9
+600,bert-base-german-cased,Effusion,0.93,0.96
+600,bert-base-german-cased,Pneumothorax,0.66,0.97
+600,bert-base-german-cased,Thoracic drain,0.95,0.99
+600,bert-base-german-cased,Venous Catheter,0.97,0.98
+600,bert-base-german-cased,Gastric Tube,0.96,0.99
+600,bert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+600,bert-base-german-cased,Misplaced Medical Device,0.42,0.97
+600,pt-radiobert-from-scratch,Congestion,0.59,0.89
+600,pt-radiobert-from-scratch,Opacity,0.76,0.82
+600,pt-radiobert-from-scratch,Effusion,0.82,0.9
+600,pt-radiobert-from-scratch,Pneumothorax,0.45,0.96
+600,pt-radiobert-from-scratch,Thoracic drain,0.8,0.94
+600,pt-radiobert-from-scratch,Venous Catheter,0.96,0.97
+600,pt-radiobert-from-scratch,Gastric Tube,0.94,0.98
+600,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.95,0.97
+600,pt-radiobert-from-scratch,Misplaced Medical Device,0.3,0.96
+600,bert-base-multilingual-cased,Congestion,0.54,0.88
+600,bert-base-multilingual-cased,Opacity,0.72,0.81
+600,bert-base-multilingual-cased,Effusion,0.82,0.9
+600,bert-base-multilingual-cased,Pneumothorax,0.44,0.95
+600,bert-base-multilingual-cased,Thoracic drain,0.89,0.97
+600,bert-base-multilingual-cased,Venous Catheter,0.97,0.97
+600,bert-base-multilingual-cased,Gastric Tube,0.97,0.99
+600,bert-base-multilingual-cased,Tracheal Tube/Canula,0.97,0.99
+600,bert-base-multilingual-cased,Misplaced Medical Device,0.21,0.96
+800,pt-radiobert-base-german-cased,Congestion,0.9,0.97
+800,pt-radiobert-base-german-cased,Opacity,0.9,0.92
+800,pt-radiobert-base-german-cased,Effusion,0.94,0.97
+800,pt-radiobert-base-german-cased,Pneumothorax,0.83,0.99
+800,pt-radiobert-base-german-cased,Thoracic drain,0.96,0.99
+800,pt-radiobert-base-german-cased,Venous Catheter,0.98,0.99
+800,pt-radiobert-base-german-cased,Gastric Tube,0.97,0.99
+800,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.97,0.99
+800,pt-radiobert-base-german-cased,Misplaced Medical Device,0.03,0.95
+800,bert-base-german-cased,Congestion,0.88,0.97
+800,bert-base-german-cased,Opacity,0.92,0.94
+800,bert-base-german-cased,Effusion,0.94,0.97
+800,bert-base-german-cased,Pneumothorax,0.77,0.98
+800,bert-base-german-cased,Thoracic drain,0.94,0.99
+800,bert-base-german-cased,Venous Catheter,0.98,0.98
+800,bert-base-german-cased,Gastric Tube,0.98,0.99
+800,bert-base-german-cased,Tracheal Tube/Canula,0.97,0.99
+800,bert-base-german-cased,Misplaced Medical Device,0.3,0.97
+800,pt-radiobert-from-scratch,Congestion,0.69,0.91
+800,pt-radiobert-from-scratch,Opacity,0.79,0.85
+800,pt-radiobert-from-scratch,Effusion,0.86,0.92
+800,pt-radiobert-from-scratch,Pneumothorax,0.53,0.96
+800,pt-radiobert-from-scratch,Thoracic drain,0.76,0.94
+800,pt-radiobert-from-scratch,Venous Catheter,0.96,0.97
+800,pt-radiobert-from-scratch,Gastric Tube,0.94,0.98
+800,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.96,0.98
+800,pt-radiobert-from-scratch,Misplaced Medical Device,0,0.95
+800,bert-base-multilingual-cased,Congestion,0.8,0.94
+800,bert-base-multilingual-cased,Opacity,0.74,0.84
+800,bert-base-multilingual-cased,Effusion,0.91,0.95
+800,bert-base-multilingual-cased,Pneumothorax,0.53,0.96
+800,bert-base-multilingual-cased,Thoracic drain,0.92,0.98
+800,bert-base-multilingual-cased,Venous Catheter,0.98,0.98
+800,bert-base-multilingual-cased,Gastric Tube,0.96,0.99
+800,bert-base-multilingual-cased,Tracheal Tube/Canula,0.97,0.99
+800,bert-base-multilingual-cased,Misplaced Medical Device,0.21,0.96
+1000,pt-radiobert-base-german-cased,Congestion,0.9,0.97
+1000,pt-radiobert-base-german-cased,Opacity,0.92,0.94
+1000,pt-radiobert-base-german-cased,Effusion,0.94,0.97
+1000,pt-radiobert-base-german-cased,Pneumothorax,0.83,0.99
+1000,pt-radiobert-base-german-cased,Thoracic drain,0.92,0.98
+1000,pt-radiobert-base-german-cased,Venous Catheter,0.98,0.98
+1000,pt-radiobert-base-german-cased,Gastric Tube,0.98,0.99
+1000,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.97,0.99
+1000,pt-radiobert-base-german-cased,Misplaced Medical Device,0.54,0.98
+1000,bert-base-german-cased,Congestion,0.88,0.97
+1000,bert-base-german-cased,Opacity,0.91,0.94
+1000,bert-base-german-cased,Effusion,0.95,0.97
+1000,bert-base-german-cased,Pneumothorax,0.72,0.98
+1000,bert-base-german-cased,Thoracic drain,0.94,0.98
+1000,bert-base-german-cased,Venous Catheter,0.97,0.98
+1000,bert-base-german-cased,Gastric Tube,0.96,0.99
+1000,bert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+1000,bert-base-german-cased,Misplaced Medical Device,0.46,0.97
+1000,pt-radiobert-from-scratch,Congestion,0.6,0.89
+1000,pt-radiobert-from-scratch,Opacity,0.82,0.87
+1000,pt-radiobert-from-scratch,Effusion,0.92,0.95
+1000,pt-radiobert-from-scratch,Pneumothorax,0.62,0.97
+1000,pt-radiobert-from-scratch,Thoracic drain,0.88,0.97
+1000,pt-radiobert-from-scratch,Venous Catheter,0.98,0.98
+1000,pt-radiobert-from-scratch,Gastric Tube,0.95,0.99
+1000,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.97,0.99
+1000,pt-radiobert-from-scratch,Misplaced Medical Device,0.01,0.95
+1000,bert-base-multilingual-cased,Congestion,0.86,0.96
+1000,bert-base-multilingual-cased,Opacity,0.87,0.92
+1000,bert-base-multilingual-cased,Effusion,0.91,0.95
+1000,bert-base-multilingual-cased,Pneumothorax,0.68,0.97
+1000,bert-base-multilingual-cased,Thoracic drain,0.97,0.99
+1000,bert-base-multilingual-cased,Venous Catheter,0.97,0.98
+1000,bert-base-multilingual-cased,Gastric Tube,0.97,0.99
+1000,bert-base-multilingual-cased,Tracheal Tube/Canula,0.97,0.99
+1000,bert-base-multilingual-cased,Misplaced Medical Device,0.25,0.96
+1500,pt-radiobert-base-german-cased,Congestion,0.9,0.98
+1500,pt-radiobert-base-german-cased,Opacity,0.91,0.94
+1500,pt-radiobert-base-german-cased,Effusion,0.95,0.97
+1500,pt-radiobert-base-german-cased,Pneumothorax,0.88,0.99
+1500,pt-radiobert-base-german-cased,Thoracic drain,0.95,0.99
+1500,pt-radiobert-base-german-cased,Venous Catheter,0.97,0.98
+1500,pt-radiobert-base-german-cased,Gastric Tube,0.98,0.99
+1500,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+1500,pt-radiobert-base-german-cased,Misplaced Medical Device,0.61,0.98
+1500,bert-base-german-cased,Congestion,0.92,0.98
+1500,bert-base-german-cased,Opacity,0.94,0.96
+1500,bert-base-german-cased,Effusion,0.95,0.98
+1500,bert-base-german-cased,Pneumothorax,0.92,0.99
+1500,bert-base-german-cased,Thoracic drain,0.96,0.99
+1500,bert-base-german-cased,Venous Catheter,0.98,0.98
+1500,bert-base-german-cased,Gastric Tube,0.97,0.99
+1500,bert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+1500,bert-base-german-cased,Misplaced Medical Device,0.57,0.98
+1500,pt-radiobert-from-scratch,Congestion,0.83,0.95
+1500,pt-radiobert-from-scratch,Opacity,0.9,0.92
+1500,pt-radiobert-from-scratch,Effusion,0.94,0.97
+1500,pt-radiobert-from-scratch,Pneumothorax,0.77,0.98
+1500,pt-radiobert-from-scratch,Thoracic drain,0.95,0.99
+1500,pt-radiobert-from-scratch,Venous Catheter,0.97,0.98
+1500,pt-radiobert-from-scratch,Gastric Tube,0.95,0.98
+1500,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.97,0.98
+1500,pt-radiobert-from-scratch,Misplaced Medical Device,0.14,0.96
+1500,bert-base-multilingual-cased,Congestion,0.91,0.98
+1500,bert-base-multilingual-cased,Opacity,0.94,0.95
+1500,bert-base-multilingual-cased,Effusion,0.95,0.97
+1500,bert-base-multilingual-cased,Pneumothorax,0.9,0.99
+1500,bert-base-multilingual-cased,Thoracic drain,0.97,0.99
+1500,bert-base-multilingual-cased,Venous Catheter,0.99,0.99
+1500,bert-base-multilingual-cased,Gastric Tube,0.97,0.99
+1500,bert-base-multilingual-cased,Tracheal Tube/Canula,0.98,0.99
+1500,bert-base-multilingual-cased,Misplaced Medical Device,0.5,0.97
+2000,pt-radiobert-base-german-cased,Congestion,0.92,0.98
+2000,pt-radiobert-base-german-cased,Opacity,0.93,0.95
+2000,pt-radiobert-base-german-cased,Effusion,0.95,0.97
+2000,pt-radiobert-base-german-cased,Pneumothorax,0.86,0.99
+2000,pt-radiobert-base-german-cased,Thoracic drain,0.97,0.99
+2000,pt-radiobert-base-german-cased,Venous Catheter,0.98,0.99
+2000,pt-radiobert-base-german-cased,Gastric Tube,0.98,0.99
+2000,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+2000,pt-radiobert-base-german-cased,Misplaced Medical Device,0.53,0.98
+2000,bert-base-german-cased,Congestion,0.93,0.98
+2000,bert-base-german-cased,Opacity,0.93,0.96
+2000,bert-base-german-cased,Effusion,0.95,0.98
+2000,bert-base-german-cased,Pneumothorax,0.89,0.99
+2000,bert-base-german-cased,Thoracic drain,0.96,0.99
+2000,bert-base-german-cased,Venous Catheter,0.98,0.99
+2000,bert-base-german-cased,Gastric Tube,0.98,0.99
+2000,bert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+2000,bert-base-german-cased,Misplaced Medical Device,0.71,0.99
+2000,pt-radiobert-from-scratch,Congestion,0.78,0.94
+2000,pt-radiobert-from-scratch,Opacity,0.89,0.92
+2000,pt-radiobert-from-scratch,Effusion,0.93,0.96
+2000,pt-radiobert-from-scratch,Pneumothorax,0.66,0.97
+2000,pt-radiobert-from-scratch,Thoracic drain,0.94,0.99
+2000,pt-radiobert-from-scratch,Venous Catheter,0.98,0.99
+2000,pt-radiobert-from-scratch,Gastric Tube,0.96,0.99
+2000,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.97,0.99
+2000,pt-radiobert-from-scratch,Misplaced Medical Device,0.57,0.98
+2000,bert-base-multilingual-cased,Congestion,0.91,0.98
+2000,bert-base-multilingual-cased,Opacity,0.93,0.95
+2000,bert-base-multilingual-cased,Effusion,0.95,0.98
+2000,bert-base-multilingual-cased,Pneumothorax,0.85,0.99
+2000,bert-base-multilingual-cased,Thoracic drain,0.97,0.99
+2000,bert-base-multilingual-cased,Venous Catheter,0.98,0.99
+2000,bert-base-multilingual-cased,Gastric Tube,0.98,1
+2000,bert-base-multilingual-cased,Tracheal Tube/Canula,0.98,0.99
+2000,bert-base-multilingual-cased,Misplaced Medical Device,0.42,0.97
+4000,pt-radiobert-base-german-cased,Congestion,0.92,0.98
+4000,pt-radiobert-base-german-cased,Opacity,0.93,0.95
+4000,pt-radiobert-base-german-cased,Effusion,0.95,0.98
+4000,pt-radiobert-base-german-cased,Pneumothorax,0.88,0.99
+4000,pt-radiobert-base-german-cased,Thoracic drain,0.95,0.99
+4000,pt-radiobert-base-german-cased,Venous Catheter,0.98,0.99
+4000,pt-radiobert-base-german-cased,Gastric Tube,0.97,0.99
+4000,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+4000,pt-radiobert-base-german-cased,Misplaced Medical Device,0.78,0.99
+4000,bert-base-german-cased,Congestion,0.92,0.98
+4000,bert-base-german-cased,Opacity,0.94,0.97
+4000,bert-base-german-cased,Effusion,0.94,0.97
+4000,bert-base-german-cased,Pneumothorax,0.91,0.99
+4000,bert-base-german-cased,Thoracic drain,0.95,0.99
+4000,bert-base-german-cased,Venous Catheter,0.99,0.99
+4000,bert-base-german-cased,Gastric Tube,0.98,0.99
+4000,bert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+4000,bert-base-german-cased,Misplaced Medical Device,0.73,0.99
+4000,pt-radiobert-from-scratch,Congestion,0.87,0.97
+4000,pt-radiobert-from-scratch,Opacity,0.93,0.95
+4000,pt-radiobert-from-scratch,Effusion,0.95,0.97
+4000,pt-radiobert-from-scratch,Pneumothorax,0.91,0.99
+4000,pt-radiobert-from-scratch,Thoracic drain,0.94,0.99
+4000,pt-radiobert-from-scratch,Venous Catheter,0.98,0.99
+4000,pt-radiobert-from-scratch,Gastric Tube,0.97,0.99
+4000,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.98,0.99
+4000,pt-radiobert-from-scratch,Misplaced Medical Device,0.64,0.98
+4000,bert-base-multilingual-cased,Congestion,0.92,0.98
+4000,bert-base-multilingual-cased,Opacity,0.94,0.96
+4000,bert-base-multilingual-cased,Effusion,0.94,0.97
+4000,bert-base-multilingual-cased,Pneumothorax,0.91,0.99
+4000,bert-base-multilingual-cased,Thoracic drain,0.95,0.99
+4000,bert-base-multilingual-cased,Venous Catheter,0.98,0.99
+4000,bert-base-multilingual-cased,Gastric Tube,0.98,1
+4000,bert-base-multilingual-cased,Tracheal Tube/Canula,0.98,0.99
+4000,bert-base-multilingual-cased,Misplaced Medical Device,0.76,0.99
+4703,pt-radiobert-base-german-cased,Congestion,0.94,0.98
+4703,pt-radiobert-base-german-cased,Opacity,0.95,0.97
+4703,pt-radiobert-base-german-cased,Effusion,0.95,0.98
+4703,pt-radiobert-base-german-cased,Pneumothorax,0.9,0.99
+4703,pt-radiobert-base-german-cased,Thoracic drain,0.98,0.99
+4703,pt-radiobert-base-german-cased,Venous Catheter,0.99,0.99
+4703,pt-radiobert-base-german-cased,Gastric Tube,0.98,0.99
+4703,pt-radiobert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+4703,pt-radiobert-base-german-cased,Misplaced Medical Device,0.77,0.99
+4703,bert-base-german-cased,Congestion,0.93,0.98
+4703,bert-base-german-cased,Opacity,0.95,0.96
+4703,bert-base-german-cased,Effusion,0.95,0.98
+4703,bert-base-german-cased,Pneumothorax,0.87,0.99
+4703,bert-base-german-cased,Thoracic drain,0.96,0.99
+4703,bert-base-german-cased,Venous Catheter,0.99,0.99
+4703,bert-base-german-cased,Gastric Tube,0.98,0.99
+4703,bert-base-german-cased,Tracheal Tube/Canula,0.98,0.99
+4703,bert-base-german-cased,Misplaced Medical Device,0.38,0.97
+4703,pt-radiobert-from-scratch,Congestion,0.91,0.98
+4703,pt-radiobert-from-scratch,Opacity,0.94,0.96
+4703,pt-radiobert-from-scratch,Effusion,0.95,0.97
+4703,pt-radiobert-from-scratch,Pneumothorax,0.82,0.99
+4703,pt-radiobert-from-scratch,Thoracic drain,0.97,0.99
+4703,pt-radiobert-from-scratch,Venous Catheter,0.98,0.99
+4703,pt-radiobert-from-scratch,Gastric Tube,0.97,0.99
+4703,pt-radiobert-from-scratch,Tracheal Tube/Canula,0.98,0.99
+4703,pt-radiobert-from-scratch,Misplaced Medical Device,0.61,0.98
+4703,bert-base-multilingual-cased,Congestion,0.94,0.98
+4703,bert-base-multilingual-cased,Opacity,0.95,0.97
+4703,bert-base-multilingual-cased,Effusion,0.95,0.97
+4703,bert-base-multilingual-cased,Pneumothorax,0.91,0.99
+4703,bert-base-multilingual-cased,Thoracic drain,0.98,1
+4703,bert-base-multilingual-cased,Venous Catheter,0.99,0.99
+4703,bert-base-multilingual-cased,Gastric Tube,0.98,1
+4703,bert-base-multilingual-cased,Tracheal Tube/Canula,0.98,0.99
+4703,bert-base-multilingual-cased,Misplaced Medical Device,0.36,0.97

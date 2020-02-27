@@ -1,0 +1,1 @@
+Models created from scripts in this repository will be stored here, if the code is executed on a local machine. As the size of the models varies between 400 MB and 2 GB, our created models were not uploaded to GitHub. They can be downloaded at: sharepoint.charite.de

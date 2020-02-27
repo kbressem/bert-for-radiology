@@ -1,0 +1,11 @@
+finding,kappa,p_kappa,agreement
+Congestion,0.77,0,91.8
+Opacity,0.67,0,83.2
+Effusion,0.71,0,85.8
+Pneumothorax,0.83,0,97.2
+Thoracic drain,0.9,0,96.2
+Venous Catheter,0.93,0,96.6
+Gastric Tube,0.94,0,97.8
+Tracheal tube/canula,0.94,0,97.3
+Misplaced Medical Device,0.71,0,97.5
+pooled,0.82,0,93.71

@@ -1,0 +1,12 @@
+finding,kappa,p_kappa,agreement
+Stauung,0.77,0,91.79
+Verschattung,0.67,0,83.24
+Erguss,0.71,0,85.81
+Pneumothorax,0.83,0,97.19
+Thoraxdrainage,0.9,0,96.25
+ZVK,0.93,0,96.6
+Magensonde,0.94,0,97.77
+Tubus,0.94,0,97.3
+Materialfehllage,0.71,0,97.54
+Confidence,0.04,0.0249252551135366,41.28
+text,1,0,100
