@@ -2,7 +2,7 @@
 
 ## Data Preparation
 ### Extraction of Free Text Reports
-Single plain text files were stored on a network-drive. File-names and paths were prior extracted using R `list.files()` function and stored in one very large table. As the workstation used by us has >120 GB RAM on my working-PC, keeping such large files in memory is no problem. On PC with smaller memory some workarrounds might be needed.   
+Single plain text files were stored on a network-drive. File-names and paths were prior extracted using R `list.files()` function and stored in one very large table. As the workstation used by us has >120 GB RAM, keeping such large files in memory is no problem. On Coimputers with smaller memory some workarrounds might be needed.   
 
 used script: [text-extraction/extract-reports.R](text-extraction/extract-reports.R)
 
