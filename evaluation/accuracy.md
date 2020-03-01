@@ -71,9 +71,9 @@ get_perf_measurements <- function(raw, threshold) {
            finding = str_replace_all(finding, c("Stauung" = "Congestion", 
                                                 "Verschattung" = "Opacity", 
                                                 "Erguss" = "Effusion", 
-                                                "Tubus" = "Tracheal Tube/Canula", 
+                                                "Tubus" = "Tracheal Tube/Cannula", 
                                                 "ZVK" = "Venous Catheter", 
-                                                "Thoraxdrainage" = "Thoracic drain", 
+                                                "Thoraxdrainage" = "Thoracic Drain", 
                                                 "Magensonde" = "Gastric Tube", 
                                                 "Materialfehllage" = "Misplaced Medical Device"))) %>%
     mutate_if(numericcharacters, as.numeric) %>%
@@ -437,10 +437,10 @@ read_csv("auc.csv")
     ##  2        200 pt-radiobert-base-german-c… Opacity                0.7   0.81
     ##  3        200 pt-radiobert-base-german-c… Effusion               0.78  0.88
     ##  4        200 pt-radiobert-base-german-c… Pneumothorax           0.4   0.95
-    ##  5        200 pt-radiobert-base-german-c… Thoracic drain         0.73  0.93
+    ##  5        200 pt-radiobert-base-german-c… Thoracic Drain         0.73  0.93
     ##  6        200 pt-radiobert-base-german-c… Venous Catheter        0.96  0.96
     ##  7        200 pt-radiobert-base-german-c… Gastric Tube           0.93  0.98
-    ##  8        200 pt-radiobert-base-german-c… Tracheal Tube/Canula   0.91  0.96
+    ##  8        200 pt-radiobert-base-german-c… Tracheal Tube/Cannula  0.91  0.96
     ##  9        200 pt-radiobert-base-german-c… Misplaced Medical De…  0.04  0.95
     ## 10        200 bert-base-german-cased      Congestion             0.48  0.86
     ## # … with 314 more rows
@@ -482,10 +482,10 @@ read_csv("auc-for-ct.csv")
     ##  2       4703 radbert Opacity                   0.96  0.81
     ##  3       4703 radbert Effusion                  0.93  0.9 
     ##  4       4703 radbert Pneumothorax              0.75  0.93
-    ##  5       4703 radbert Thoracic drain            0.88  0.93
+    ##  5       4703 radbert Thoracic Drain            0.88  0.93
     ##  6       4703 radbert Venous Catheter           0.86  0.89
     ##  7       4703 radbert Gastric Tube              0.71  0.84
-    ##  8       4703 radbert Tracheal Tube/Canula      0.9   0.91
+    ##  8       4703 radbert Tracheal Tube/Cannula     0.9   0.91
     ##  9       4703 radbert Misplaced Medical Device  0.4   0.77
     ## 10       4703 fsbert  Congestion                0.47  0.81
     ## # … with 26 more rows

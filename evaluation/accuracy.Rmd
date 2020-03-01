@@ -80,9 +80,9 @@ get_perf_measurements <- function(raw, threshold) {
            finding = str_replace_all(finding, c("Stauung" = "Congestion", 
                                                 "Verschattung" = "Opacity", 
                                                 "Erguss" = "Effusion", 
-                                                "Tubus" = "Tracheal Tube/Canula", 
+                                                "Tubus" = "Tracheal Tube/Cannula", 
                                                 "ZVK" = "Venous Catheter", 
-                                                "Thoraxdrainage" = "Thoracic drain", 
+                                                "Thoraxdrainage" = "Thoracic Drain", 
                                                 "Magensonde" = "Gastric Tube", 
                                                 "Materialfehllage" = "Misplaced Medical Device"))) %>%
     mutate_if(numericcharacters, as.numeric) %>%
@@ -292,7 +292,7 @@ acc %>%
     facet_wrap(~name) + 
     xlim(100,4500) + 
     scale_y_continuous(breaks = 0:10/10) + 
-    labs(x="Size of train dataset", title = "Performance gain on increasing train data") + 
+    labs(x="Size of train dataset", title = "Performance Gain on Increasing Train Data") + 
     theme(axis.title.y = element_blank())
 ```
 
