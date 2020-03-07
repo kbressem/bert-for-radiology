@@ -65,3 +65,4 @@ Our BERT models achieve state of the art performance compared to the existing li
 \$ As reported by Wang et al.34 
 \§ Congestion not reported, but edema.  
 \* performed only pneumonia detection, as a clinical diagnosis and used varying thresholds of pneumonia-prevalence.  
+na not available/not reported by study
