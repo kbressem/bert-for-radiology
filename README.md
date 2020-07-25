@@ -66,3 +66,21 @@ Our BERT models achieve state of the art performance compared to the existing li
 \§ Congestion not reported, but edema.  
 \* performed only pneumonia detection, as a clinical diagnosis and used varying thresholds of pneumonia-prevalence.  
 _na_ not available/not reported by study
+
+## Citation
+If you find the code helpful, please cite our published manuscript:  
+```
+@article{10.1093/bioinformatics/btaa668,
+    author = {Bressem, Keno K and Adams, Lisa C and Gaudin, Robert A and Tr√∂ltzsch, Daniel and Hamm, Bernd and Makowski, Marcus R and Schüle, Chan-Yong and Vahldiek, Janis L and Niehues, Stefan M},
+    title = "{Highly accurate classification of chest radiographic reports using a deep learning natural language model pretrained on 3.8 million text reports}",
+    journal = {Bioinformatics},
+    year = {2020},
+    month = {07},
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btaa668},
+    url = {https://doi.org/10.1093/bioinformatics/btaa668},
+    note = {btaa668},
+    eprint = {https://academic.oup.com/bioinformatics/article-pdf/doi/10.1093/bioinformatics/btaa668/33526133/btaa668.pdf},
+}
+
+
